@@ -82,7 +82,7 @@
 
             </div>
 
-       
+
 
             <!-- Facebook -->
             <div class="col-md-4 mb-4 d-flex">
@@ -97,13 +97,23 @@
                 </div>
             </div>
 
+            <div class="col-md-4 mb-4 d-flex">
+                <iframe
+                    src="https://www.tiktok.com/embed/@bbpp.binuang"
+                    width="330"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
             <div class="container mt-5">
                 <div class="text-center mb-4">
                     <h3 class="fw-bold">YouTube</h3>
                 </div>
 
                 <div class="ratio ratio-16x9 shadow rounded-4 overflow-hidden">
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/zQjPZpHFPY4?si=U7cgr--qEmI6kV1t"
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/jHeBUpjLiHA?si=DI4Ja7wCTDNTiADU"
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
