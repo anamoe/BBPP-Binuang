@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{asset('public/image/kementan.png')}}">
 
     <style>
         /* Navbar utama */
@@ -560,20 +561,20 @@
             window.speechSynthesis.speak(msg);
         }
 
-      
+
         document.addEventListener('click', function() {
-            speak("");//suara
+            speak(""); //suara
         }, {
             once: true
         });
 
-   
+
         document.addEventListener('mousemove', function(e) {
 
             const menu = e.target.closest('.nav-link, .dropdown-item');
             if (!menu) return;
 
-            if (menu.dataset.speaking) return; 
+            if (menu.dataset.speaking) return;
 
             menu.dataset.speaking = "1";
 
