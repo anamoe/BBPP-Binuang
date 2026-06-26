@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBBPP Binuang</title>
+    <title>Balai Besar Pelatihan Pertanian Binuang</title>
+    <meta name="description"
+        content="Website resmi BBPP Binuang yang menyediakan informasi pelatihan, berita, layanan, jadwal kegiatan, dan profil Balai Besar Pelatihan Pertanian Binuang.">
+
+    <meta name="keywords"
+        content="BBPP Binuang, Balai Besar Pelatihan Pertanian, Pelatihan Pertanian, Kementerian Pertanian">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://bbppbinuang.id/">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
