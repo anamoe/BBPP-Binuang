@@ -92,7 +92,7 @@
 
   <h4>Ulang Tahun Pegawai BBPP Binuang</h4>
 </ol>
-<table class="table table-bordered">
+<!-- <table class="table table-bordered">
   <thead>
     <tr>
 
@@ -120,5 +120,5 @@
     </tr>
     @endforeach
   </tbody>
-</table>
+</table> -->
 @endsection
