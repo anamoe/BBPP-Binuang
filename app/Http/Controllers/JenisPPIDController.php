@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\JenisPpid;
+use App\Models\JenisPPID;
 use Illuminate\Http\Request;
 
 class JenisPPIDController extends Controller
