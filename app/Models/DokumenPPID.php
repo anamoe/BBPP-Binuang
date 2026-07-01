@@ -20,6 +20,6 @@ class DokumenPPID extends Model
     // Relasi ke JenisPpid
     public function jenis()
     {
-        return $this->belongsTo(JenisPpid::class, 'jenis_ppid_id');
+        return $this->belongsTo(JenisPPID::class, 'jenis_ppid_id');
     }
 }
