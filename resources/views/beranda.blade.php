@@ -10,7 +10,7 @@
                 <img src="{{ asset('public/storage/' . $item->image) }}"
                     class="d-block w-100"
                     alt="Banner"
-                    style="height: 500px; object-fit: cover;">
+                    style="height: 100%; object-fit: cover;">
             </div>
             @endforeach
         </div>
