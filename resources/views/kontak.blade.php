@@ -169,7 +169,7 @@
         let alamat = document.querySelector("input[name=alamat]").value;
         let pesan = document.querySelector("textarea[name=pesan]").value;
 
-        let nomorTujuan = "6282257661154"; // ganti nomor WA tujuan (pakai kode negara, tanpa +)
+        let nomorTujuan = "6287740642016"; // ganti nomor WA tujuan (pakai kode negara, tanpa +)
 
         let text = `Halo, saya ingin menghubungi: Nama: ${nama} Alamat: ${alamat} Pesan:${pesan}`;
 
