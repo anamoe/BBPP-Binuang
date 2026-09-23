@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-bbpp">
     <div class="container pt-1 pb-1">
-        <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/image/bbppbinuang.png')}}" alt="" style="width: 200px"></a>
+        <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/image/bbppbinuang.png')}}" alt="" style="height: 50px; width: auto;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>

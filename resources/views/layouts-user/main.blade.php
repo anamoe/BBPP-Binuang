@@ -32,8 +32,12 @@
 
     <style>
         /* Navbar utama */
+     
+        .navbar-brand img {
+            transform: scale(1.5);
+        }
         .navbar-bbpp {
-            background: linear-gradient(90deg, #c3dcc3ff 0%, #66a074ff 40%, #3f8e55ff 100%);
+            background: linear-gradient(60deg, #ffff 40%, #ffff 100%);
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
@@ -103,16 +107,16 @@
         }
 
         .navbar .nav-link {
-            color: white !important;
+            color: black !important;
             font-weight: 700;
         }
 
         .navbar .nav-link:hover {
-            color: #000000ff !important;
+            color: green !important;
         }
 
         .navbar .nav-link.active {
-            color: black !important;
+            color: green !important;
         }
 
         */ body {
@@ -224,7 +228,7 @@
         }
 
         footer {
-            background-color: #2f451e;
+            background-color: #2B4938;
             color: white;
             padding: 60px 0 20px;
         }
