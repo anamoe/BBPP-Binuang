@@ -57,11 +57,11 @@
                             </td>
                             <td class="text-center">{{ $item->view }}</td>
                             <td class="text-center">
-                            <a href="{{ route('articles.edit',$item->id) }}" class="btn btn-warning btn-sm">
+                            <a href="{{ route('articles.edit',$item) }}" class="btn btn-warning btn-sm">
                                 <i class="fas fa-edit"></i>
                             </a>
 
-                            <form action="{{ route('articles.destroy',$item->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                            <form action="{{ route('articles.destroy',$item) }}" method="POST" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger btn-sm">
