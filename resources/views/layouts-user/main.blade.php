@@ -32,10 +32,13 @@
 
     <style>
         /* Navbar utama */
-     
+
+
+
         .navbar-brand img {
             transform: scale(1.5);
         }
+
         .navbar-bbpp {
             background: linear-gradient(60deg, #ffff 40%, #ffff 100%);
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -333,28 +336,7 @@
             background: #3e7712 !important;
         }
 
-        .alumni-section {
-            position: relative;
-            background: url('image/alumni.jpg');
-            color: white;
-        }
-
-        .alumni-section .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.55);
-            /* lapisan gelap */
-            z-index: 1;
-        }
-
-        .alumni-section .container {
-            position: relative;
-            z-index: 2;
-        }
-
+       
         .social-box {
             background: #fff;
             overflow: hidden;

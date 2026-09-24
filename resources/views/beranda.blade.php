@@ -126,28 +126,32 @@
 
 
 {{-- === Alumni Section === --}}
-<section class="alumni-section text-center text-white py-5" data-aos="fade-up">
-    <div class="overlay"></div>
-    <div class="container position-relative">
-        <h2 class="fw-bold mb-2">Alumni Peserta Pelatihan</h2>
-        <!-- <p class="mb-5">Update Agustus 2025</p> -->
-        <p id="update-text" class="mb-5"></p>
+<section class="alumni-section text-center text-white" data-aos="fade-up" style="position: relative; background-image: url('/binuang/public/image/alumni.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 120px 0;">
+    
+    <!-- 1. INI LAPISAN GELAPNYA (z-index: 1) -->
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
+    
+    <!-- 2. INI KONTEN TEKSNYA (z-index: 2 dan position: relative agar teks maju ke depan) -->
+    <div class="container" style="position: relative; z-index: 2;">
+        <h2 class="fw-bold mb-2 text-white" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Alumni Peserta Pelatihan</h2>
+        <p id="update-text" class="mb-5 text-white">Update September 2026</p>
+        
         <div class="row justify-content-center">
             <div class="col-6 col-md-3 mb-4">
-                <h3 class="fw-bold display-6">1.113</h3>
-                <p class="mb-0">Aparatur</p>
+                <h3 class="fw-bold display-6 text-white">1.113</h3>
+                <p class="mb-0 text-white">Aparatur</p>
             </div>
             <div class="col-6 col-md-3 mb-4">
-                <h3 class="fw-bold display-6">15.918</h3>
-                <p class="mb-0">Non Aparatur</p>
+                <h3 class="fw-bold display-6 text-white">15.918</h3>
+                <p class="mb-0 text-white">Non Aparatur</p>
             </div>
             <div class="col-6 col-md-3 mb-4">
-                <h3 class="fw-bold display-6">33</h3>
-                <p class="mb-0">Sertifikasi</p>
+                <h3 class="fw-bold display-6 text-white">33</h3>
+                <p class="mb-0 text-white">Sertifikasi</p>
             </div>
             <div class="col-6 col-md-3 mb-4">
-                <h3 class="fw-bold display-6">21</h3>
-                <p class="mb-0">Kerjasama</p>
+                <h3 class="fw-bold display-6 text-white">21</h3>
+                <p class="mb-0 text-white">Kerjasama</p>
             </div>
         </div>
     </div>
