@@ -57,6 +57,63 @@
     </div>
 </section>
 
+{{-- POPULAR --}}
+
+<section id="sosial" class="py-5">
+    <div class="container">
+        <!-- Judul Section -->
+        <div class="section-title text-center mb-5">
+            <h2 class="fw-bold mb-1 border-bottom pb-1 d-inline-block">Berita Terbaru</h2>
+        </div>
+
+        <!-- Grid 3 Kolom -->
+        <div class="row text-start">
+            @foreach($popular as $item)
+            <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Wrapper Item dengan d-flex dan shadow -->
+                <div class="d-flex flex-column h-100 p-3 shadow-sm border rounded bg-white popular-item">
+
+                    <div class="d-flex mb-3">
+                        <!-- Gambar -->
+                        <img src="{{ asset('public/storage/'.$item->image) }}"
+                            width="85"
+                            height="85"
+                            style="object-fit:cover; border-radius:6px;"
+                            class="me-3"
+                            alt="{{ $item->title }}">
+
+                        <!-- Teks Judul & Tanggal -->
+                        <div>
+                            <h6 class="mb-1 fw-bold" style="font-size: 0.95rem; line-height: 1.4;">
+                                <a href="{{ route('berita.show', $item->slug) }}" class="text-decoration-none text-dark">
+                                    {{ Str::limit($item->title, 80) }}
+                                </a>
+                            </h6>
+                            <small class="text-muted" style="font-size: 0.8rem;">
+                                <i class="bi bi-calendar3 me-1"></i> {{ $item->created_at->format('d M Y') }}
+                            </small>
+                        </div>
+                    </div>
+
+                    <!-- Deskripsi Singkat -->
+                    <p class="text-muted mb-3 flex-grow-1" style="font-size: 0.85rem; line-height: 1.5;">
+                        {!! Str::limit(strip_tags($item->desc), 150) !!}
+                    </p>
+
+                    <!-- Tombol Baca Selengkapnya -->
+                    <a href="{{ route('berita.show', $item->slug) }}"
+                        class="btn btn-sm btn-outline-primary mt-auto align-self-start">
+                        Baca Selengkapnya
+                    </a>
+
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+    </div>
+</section>
+
 
 
 {{-- === Sosial Media === --}}
@@ -65,7 +122,7 @@
 <section id="sosial" class="py-5">
     <div class="container text-center">
         <div class="section-title text-center mb-4">
-            <h2 class="mb-4">Platform Sosial Media</h2>
+            <h2 class="mb-1">Platform Sosial Media</h2>
         </div>
 
         <div class="row justify-content-center align-items-stretch mt-4">
@@ -127,15 +184,15 @@
 
 {{-- === Alumni Section === --}}
 <section class="alumni-section text-center text-white" data-aos="fade-up" style="position: relative; background-image: url('/public/image/alumni.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 120px 0;">
-    
+
     <!-- 1. INI LAPISAN GELAPNYA (z-index: 1) -->
     <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
-    
+
     <!-- 2. INI KONTEN TEKSNYA (z-index: 2 dan position: relative agar teks maju ke depan) -->
     <div class="container" style="position: relative; z-index: 2;">
         <h2 class="fw-bold mb-2 text-white" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Alumni Peserta Pelatihan</h2>
         <p id="update-text" class="mb-5 text-white">Update September 2026</p>
-        
+
         <div class="row justify-content-center">
             <div class="col-6 col-md-3 mb-4">
                 <h3 class="fw-bold display-6 text-white">1.113</h3>

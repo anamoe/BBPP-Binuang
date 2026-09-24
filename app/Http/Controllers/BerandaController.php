@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helpers\VisitorHelper;
 use App\Models\About;
+use App\Models\Article;
 use Carbon\Carbon;
 use App\Models\Task;
 use App\Models\Visi;
@@ -50,7 +51,9 @@ class BerandaController extends Controller
         $inovasi_layanan = InovasiLayanan::all();
         $upt_external = UptExternal::all();
         $footer = About::first();
-        return view('beranda', compact('mingguIni', 'bulanIni', 'tahunIni', 'total', 'banner', 'organisasi', 'tugas', 'visi', 'inovasi_layanan', 'upt_external', 'footer'));
+
+        $popular    = Article::orderBy('view', 'desc')->take(3)->get();
+        return view('beranda', compact('popular', 'mingguIni', 'bulanIni', 'tahunIni', 'total', 'banner', 'organisasi', 'tugas', 'visi', 'inovasi_layanan', 'upt_external', 'footer'));
     }
     public function sejarah()
     {
@@ -260,11 +263,11 @@ class BerandaController extends Controller
 
     public function kontak()
     {
-       
-         $visitorData = VisitorHelper::getFooterAndVisitor();
+
+        $visitorData = VisitorHelper::getFooterAndVisitor();
 
         return view('kontak', array_merge(
-           
+
             $visitorData
         ));
     }
