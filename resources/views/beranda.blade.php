@@ -126,7 +126,7 @@
 
 
 {{-- === Alumni Section === --}}
-<section class="alumni-section text-center text-white" data-aos="fade-up" style="position: relative; background-image: url('/binuang/public/image/alumni.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 120px 0;">
+<section class="alumni-section text-center text-white" data-aos="fade-up" style="position: relative; background-image: url('/public/image/alumni.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 120px 0;">
     
     <!-- 1. INI LAPISAN GELAPNYA (z-index: 1) -->
     <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
