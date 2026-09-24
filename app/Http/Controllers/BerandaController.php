@@ -52,7 +52,7 @@ class BerandaController extends Controller
         $upt_external = UptExternal::all();
         $footer = About::first();
 
-        $popular    = Article::orderBy('view', 'desc')->take(3)->get();
+        $popular    = Article::orderBy('id', 'desc')->take(6)->get();
         return view('beranda', compact('popular', 'mingguIni', 'bulanIni', 'tahunIni', 'total', 'banner', 'organisasi', 'tugas', 'visi', 'inovasi_layanan', 'upt_external', 'footer'));
     }
     public function sejarah()
